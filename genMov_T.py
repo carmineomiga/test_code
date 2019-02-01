@@ -1,9 +1,16 @@
 #!/usr/bin/env python
 #coding:utf8
 
+#1. 폴더를 탐색한다.
+#2. proxy 경로를 생성한다.
+#3. exr로 jpg를 만든다.
+#4. jpg로 mov를 만든다.
+#5. jpg를 삭제한다.
+
 import os
-import subprocess
 import sys
+import subprocess
+import pathapi
 
 def searchExt(rootPath, ext):
 	"""
